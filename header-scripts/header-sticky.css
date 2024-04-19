@@ -66,6 +66,7 @@
 
 #Header-sticky-Searchdiv-replacement {
   height: 1.5em;
+  filter: brightness(2);
 }
 
 #Header-sticky-Searchdiv-replacement:hover {
@@ -95,6 +96,20 @@
   cursor: pointer;
 }
 
+.Header-sticky-check-markCart {
+  height: 1.5em;
+  filter: invert(65%);
+  display: none;
+
+  transition-property: filter;
+  transition-duration: .2s;
+}
+
+.Header-sticky-check-markCart:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
 #Header-sticky-websiteOptions-arrow {
   height: .65em;
   filter: invert(100%);
@@ -116,9 +131,17 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .Header-sticky-WishlistCart-buttons {
+    display: none;
+  }
+
+  .Header-sticky-check-markCart {
+    display: block;
+  }
+
   #Header-sticky-WishlistCart-div {
     margin: 0;
-    justify-content: left;
+    justify-content: center;
   }
 
   #Header-sticky-websiteOptions-arrow {
