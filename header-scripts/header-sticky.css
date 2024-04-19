@@ -1,0 +1,94 @@
+:root {
+  --text-secondary: #aaaaae;
+  --Text: #ffffff;
+  --Backgrownd-Black: rgb(18, 18, 18);
+}
+
+
+#Header-sticky {
+  padding:  2rem 12.5% 2rem 12.5%;
+  background-color: var(--Backgrownd-Black);
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  
+}
+
+#Header-sticky-Searchdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(32, 32, 32);
+  height: 2.8rem;
+  border-radius: 2rem;
+}
+
+#Header-sticky-magnifying_glass-Button-div {
+  height: 100%;
+  width: 3.3rem;
+  display: flex;
+  justify-content: center; 
+}
+
+#Header-sticky-magnifying_glass-Button {
+  height: 100%;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+#Header-sticky-magnifying_glass-img {
+  width: 100%;
+  color: black;
+  filter: invert(100%);
+}
+
+#Header-sticky-input {
+  background-color: transparent;
+  border: none;
+  height: 70%;
+  font-size: 1rem;
+  overflow: hidden;
+  color: rgb(245, 245, 245);
+  outline: 0;
+  font-weight: 500;
+}
+
+#Header-sticky-websiteOptions-div {
+  flex-grow: 1;
+  display: flex;
+  column-gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.Header-sticky-websiteOptions-buttons {
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+
+  transition-property: color;
+  transition-duration: 0.15s;
+  font-weight: normal;
+}
+
+.Header-sticky-websiteOptions-buttons:hover {
+  color: var(--Text);
+  cursor: pointer;
+}
+
+#Header-sticky-Discover {
+  color: var(--Text);
+}
+
+#Header-sticky-WishlistCart-div {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-right: 0.5rem;
+}
