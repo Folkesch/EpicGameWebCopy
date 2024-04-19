@@ -43,3 +43,4 @@ SclickArea.addEventListener("click", function(event) {
     sliderUL.removeChild(event.target);
   }
 });
+
