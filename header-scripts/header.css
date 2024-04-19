@@ -234,8 +234,48 @@ header {
   background-color: rgb(56, 56, 56);
 }
 
+#header-right-replacement {
+  flex-grow: 1;
+  justify-content: right;
+  display: none;
+}
+
+#header-replacement-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 2em;
+  width: 2em;
+
+  background-color: transparent;
+
+  border: none;
+  padding: 0;
+}
+
+#header-replacement-button:hover {
+  cursor: pointer;
+}
+
+.header-replacement-button-divs {
+  width: 80%;
+  height: 10%;
+  background-color: var(--Text);
+  border-radius: 1em;
+}
+
 @media screen and (max-width: 1000px) {
   #header-right-right-div {
     display: none;
   }
+
+  #header-right-replacement {
+    display: flex;
+  }
+
+  #Header-sticky-Browse {
+    display: none;
+  }
+
 }
