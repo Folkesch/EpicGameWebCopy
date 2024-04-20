@@ -27,11 +27,15 @@
   background-color: transparent;
   margin: 0;
   padding-left: 8%;
-  overflow: hidden;
+  overflow: scroll;
 
   display: flex;
   flex-direction: column;
   row-gap: calc((100% / 6) - 16%);
+}
+
+#img-Slider-ul::-webkit-scrollbar {
+  display: none;
 }
 
 .img-Slider-li {
@@ -90,7 +94,7 @@
     margin: 0;
     padding-left: 5vw;
     padding-right: 5vw;
-    overflow: hidden;
+    overflow: scroll;
   
     display: flex;
     flex-direction: row;
