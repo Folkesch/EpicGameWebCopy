@@ -27,6 +27,7 @@
   background-color: transparent;
   margin: 0;
   padding-left: 8%;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;

@@ -19,7 +19,7 @@ let ULcount = 1;
 SclickArea.addEventListener("click", function(event) {
 
   if (event.target.tagName != "LI"/* && event.target.className != "img-Slider-li-p" && event.target.className != "img-Slider-li-img"*/){
-    if (sliderUL.children.length < 6) {
+    if (sliderUL.children.length < 60) {
 
       tempIMG = document.createElement("img");
       tempIMG.className = "img-Slider-li-img";
