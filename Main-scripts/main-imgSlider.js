@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
 });
 
 window.addEventListener("resize", function() {
-  if (window.innerWidth < 700) {
+  if (window.innerWidth <= 700) {
     imgs = document.getElementsByClassName("img-Slider-li-img");
 
     for (var i = 0; i < imgs.length; i++) {
