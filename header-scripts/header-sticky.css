@@ -9,7 +9,7 @@
   padding:  2rem 12.5% 2rem 12.5%;
   background-color: var(--Backgrownd-Black);
   position: sticky;
-  top: 0;
+  top: -1px;
 
   display: flex;
   align-items: center;
