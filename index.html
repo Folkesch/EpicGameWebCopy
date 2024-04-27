@@ -11,7 +11,7 @@
 <body>
 <!--------------------Header-------------------------------------------------------------------------------------------------->
 
-  <header>
+  <header id="header">
     <div id="header-left-dropdown-div">
       <button id="header-epicLogo-button">
         <img id="header-epicLogo" src="img/header/Epic-Games-Whiteicon-logo-vector.png" alt="epic logo">
@@ -38,7 +38,7 @@
             <div id="header-right-div-n2-n1-dropdown"></div>
           </div>
           <div  class="header-right-div-n2-divs">
-            <button id="header-right-div-n2-n2"><img id="header-right-div-n2-n2-img" src="img/header/747376.png" alt="no picure profile pictur"></button>
+            <button id="header-right-div-n2-n2"><img id="header-right-div-n2-n2-img" src="img/header/747376.png" alt="no picure profile picture"></button>
             <div id="header-right-div-n2-n2-dropdown"></div>
           </div>
         </div>
@@ -54,7 +54,6 @@
           <div class="header-replacement-button-divs"></div>
           <div class="header-replacement-button-divs"></div>
         </button>
-        <div id="header-replacement-popup"></div>
       </div>
     </div>
   </header>
@@ -89,8 +88,27 @@
     </div>
   </div>
 
+  <!--------------------Main replacement divs-------------------------------------------------------------------------------------------->
+
+  <div id="main-replacement-menu-div">
+    <div id="main-replacement-menu-logo-div">
+      <div>
+        <img src="img/header/431498-200.png" alt="internet Logo">
+      </div>
+      <div>
+        <img src="img/header/747376.png" alt="no picure profile picture">
+      </div>
+    </div>
+
+    <button class="main-replacement-menu-buttons">Distrubution</button>
+    <button class="main-replacement-menu-buttons">Support</button>
+    <button class="main-replacement-menu-buttons">Unreal Engine</button>
+
+    <button >Download</button>
+  </div>
+
   <!--------------------Main img slider-------------------------------------------------------------------------------------------------->
-  <main>
+  <main id="main">
     <div id="main-img-Slider-div">
       <div id="img-Slider-div">
         <img id="img-Slider-img"  src="https://cdn2.unrealengine.com/epic-savings-april-desktop-carousel-asset-4addc2917528.avif?h=720&quality=medium&resize=1&w=1280" alt="pictur of a game">
@@ -144,6 +162,8 @@
       </div>
     </div>
 </main>
+
+<footer id="footer"></footer>
 
 <script src="header-scripts/header.js"></script>
 <script src="Main-scripts/main-imgSlider.js"></script>

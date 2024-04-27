@@ -6,7 +6,6 @@
 body {
   padding: 0;
   margin: 0;
-  height: 10000px;
   background-color: rgb(18, 18, 18);
 }
 
@@ -245,13 +244,13 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 2em;
-  width: 2em;
+  height: 4em;
+  width: 4em;
 
   background-color: transparent;
 
   border: none;
-  padding: 0;
+  padding: 1em 1em 1em 1em;
 }
 
 #header-replacement-button:hover {
@@ -260,7 +259,8 @@ header {
 
 .header-replacement-button-divs {
   width: 80%;
-  height: 10%;
+  min-height: 2px;
+  height: 5%;
   background-color: var(--Text);
   border-radius: 1em;
 }
@@ -278,4 +278,97 @@ header {
     display: none;
   }
 
+  header {
+    padding: 0.7em;
+    width: calc(100% - 2 * 0.7rem);
+  }
+}
+
+/*--------------------Main replacement divs--------------------------------------------------------------------------------------------*/
+
+#main-replacement-menu-div {
+  /*display: flex;*/
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+
+  background-color: rgb(18, 18, 18);
+  display: none;
+}
+
+#main-replacement-menu-logo-div {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+#main-replacement-menu-logo-div > :first-child {
+  height: 2em;
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+#main-replacement-menu-logo-div > :first-child:hover {
+  cursor: pointer;
+}
+
+#main-replacement-menu-logo-div > :nth-child(2) {
+  height: 2em;
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: #202024;
+  border-radius: 1em;
+  margin-right: 1em;
+}
+
+#main-replacement-menu-logo-div > :nth-child(2):hover {
+  cursor: pointer;
+}
+
+#main-replacement-menu-logo-div > :first-child img {
+  height: 70%;
+  filter: invert(80%);
+}
+
+#main-replacement-menu-logo-div img {
+  height: 50%;
+  filter: invert(80%);
+}
+
+.main-replacement-menu-buttons {
+  width: 90%;
+  padding: 1.1em 0 1.1em 0;
+  margin-top: 0.8em;
+  background-color: #202024;
+  color: var(--Text);
+  border: 0;
+  border-radius: 1em;
+  font-size: .95em;
+}
+
+.main-replacement-menu-buttons:hover {
+  cursor: pointer;
+}
+
+#main-replacement-menu-div > :nth-child(5) {
+  position: absolute;
+  bottom: .5em;
+
+  width: 90%;
+  padding: 1.1em 0 1.1em 0;
+  font-size: .95em;
+  border-radius: 1em;
+  border: 0;
+  background-color: #26bbff;
+}
+
+#main-replacement-menu-div > :nth-child(5):hover {
+  cursor: pointer;
 }
