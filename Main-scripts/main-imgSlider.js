@@ -1,6 +1,24 @@
 const sliderUL = document.getElementById("img-Slider-ul");
 const SclickArea = document.getElementById("img-Slider-rightSection");
 
+const sImgSrcs = [
+  "img/main/smallSlidePic/epic-savings1200x1600.avif",
+  "img/main/smallSlidePic/witchfire.webp",
+  "img/main/smallSlidePic/manor-lords.avif",
+  "img/main/smallSlidePic/kingdom-come.avif",
+  "img/main/smallSlidePic/epic-savings1200x1600.avif",
+  "img/main/smallSlidePic/epic-savings1200x1600.avif"
+]; 
+
+const bImgSrcs = [
+  "img/main/bigSlidePic/epic-savings.avif",
+  "img/main/bigSlidePic/witchfire1200x1600.avif",
+  "img/main/bigSlidePic/manor-lords1200x1600.avif",
+  "img/main/smallSlidePic/kingdom-come.avif",
+  "img/main/bigSlidePic/epic-savings.avif",
+  "img/main/bigSlidePic/epic-savings.avif"
+]; 
+
 var pageTitle = document.title;
 var attentionMessage = 'Come Back!';
 
@@ -13,7 +31,7 @@ window.addEventListener("load", function() {
     }
   }
 });
-
+/*
 window.addEventListener("resize", function() {
   if (window.innerWidth <= 700) {
     imgs = document.getElementsByClassName("img-Slider-li-img");
@@ -30,7 +48,7 @@ window.addEventListener("resize", function() {
     }
   }
 })
-
+*/
 document.addEventListener('visibilitychange', function(e) {
   var isPageActive = !document.hidden;
 
@@ -46,7 +64,7 @@ let ULcount = 1;
 SclickArea.addEventListener("click", function(event) {
 
   if (event.target.tagName != "LI"){
-    if (sliderUL.children.length < 60 && window.innerWidth > 700) {
+    if (sliderUL.children.length < 50 && window.innerWidth > 700) {
 
       tempIMG = document.createElement("img");
       tempIMG.className = "img-Slider-li-img";
