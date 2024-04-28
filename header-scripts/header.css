@@ -359,7 +359,7 @@ header {
 
 #main-replacement-menu-div > :nth-child(5) {
   position: absolute;
-  bottom: .5em;
+  bottom: 1em;
 
   width: 90%;
   padding: 1.1em 0 1.1em 0;
@@ -367,6 +367,7 @@ header {
   border-radius: 1em;
   border: 0;
   background-color: #26bbff;
+  color: rgb(18, 18, 18);
 }
 
 #main-replacement-menu-div > :nth-child(5):hover {
