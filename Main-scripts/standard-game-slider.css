@@ -1,0 +1,215 @@
+:root {
+  --text-secondary: #aaaaae;
+  --Text: #ffffff;
+}
+
+.standard-game-slider {
+  margin-top: 3em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.standard-game-slider-heder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.standard-game-slider-heder > :nth-child(1) {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.standard-game-slider-heder > :nth-child(1):hover {
+  cursor: pointer;
+}
+
+.standard-game-slider-heder > :nth-child(1) h1 {
+  color: var(--Text);
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: .7em;
+  margin-bottom: .7em;
+}
+
+.standard-game-slider-heder > :nth-child(1) img {
+  height: .5em;
+  filter: invert(80%);
+  transform: rotate(270deg);
+
+  transition-property: margin-left;
+  transition-duration: .2s;
+}
+
+.standard-game-slider-heder > :nth-child(1) img:hover {
+  margin-left: .5em;
+}
+
+
+.standard-game-slider-heder > :nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: .5em;
+  flex-grow: 1;
+  justify-content: right;
+  align-items: center;
+}
+
+.standard-game-slider-heder > :nth-child(2) button {
+  border: none;
+  background-color: black;
+  filter: invert(15%);
+  border-radius: 5em;
+  height: 2.5em;
+  width: 2.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: filter;
+  transition-duration: .2s;
+}
+
+.standard-game-slider-heder > :nth-child(2) button:hover {
+  filter: invert(20%);
+  cursor: pointer;
+}
+
+.standard-game-slider-heder > :nth-child(2) > :nth-child(1) img {
+  height: .7em;
+  filter: invert(100%);
+  transform: rotate(90deg);
+}
+
+.standard-game-slider-heder > :nth-child(2) > :nth-child(2) img {
+  height: .7em;
+  filter: invert(100%);
+  transform: rotate(270deg);
+}
+
+.standard-game-slider-ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+  overflow: hidden;
+  column-gap: 2.5%;
+
+  scroll-behavior: smooth;
+}
+
+.standard-game-slider-ul::-webkit-scrollbar {
+  display: none;
+}
+
+.standard-game-slider-ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.standard-game-slider-ul li > :nth-child(1) {
+  height: calc(74vw * 0.18 * 480 / 360);
+}
+
+.standard-game-slider-ul li > :nth-child(1):hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.standard-game-slider-ul li > :nth-child(1) img {
+  height: 100%;
+  border-radius: .5vw;
+}
+
+.standard-game-slider-ul li > :nth-child(2) {
+  width: 100%;
+  color: var(--text-secondary);
+  font-size: .6em;
+  margin-top: .6em;
+  margin-bottom: .6em;
+}
+
+.standard-game-slider-ul li > :nth-child(3) {
+  color: var(--Text);
+  font-size: 1em;
+}
+
+.standard-game-slider-ul li > :nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: .9em;
+}
+
+.standard-game-slider-ul li > :nth-child(4) > :nth-child(1) {
+  background-color: rgb(0, 116, 228);
+  font-size: .7em;
+  padding: .4em .8em .4em .8em;
+  border-radius: .3em;
+  color: rgb(245, 245, 245);
+}
+
+.standard-game-slider-ul li > :nth-child(4) > :nth-child(2) {
+  flex-grow: 1;
+  gap: .7em;
+  justify-content: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.standard-game-slider-ul li > :nth-child(4) > :nth-child(2) > :nth-child(1) {
+  color: var(--text-secondary);
+  font-size: 1em;
+  text-decoration: line-through;
+}
+
+.standard-game-slider-ul li > :nth-child(4) > :nth-child(2) > :nth-child(2) {
+  color: var(--Text);
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .standard-game-slider-heder > :nth-child(2) {
+    display: none;
+  }
+
+  .standard-game-slider-ul {
+    overflow: scroll;
+    column-gap: 2.5%;
+  }
+
+  .standard-game-slider-ul li > :nth-child(1) {
+    height: 15em;
+  }
+
+  .standard-game-slider-ul li > :nth-child(1) img {
+    border-radius: .5em;
+  }
+
+  .standard-game-slider-ul li > :nth-child(4) > :nth-child(2) > :nth-child(1) {
+    font-size: .9em;
+  }
+  
+  .standard-game-slider-ul li > :nth-child(4) > :nth-child(2) > :nth-child(2) {
+    font-size: .9em;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .standard-game-slider {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
