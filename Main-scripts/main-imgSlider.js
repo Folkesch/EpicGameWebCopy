@@ -7,7 +7,7 @@ const sImgSrcs = [
   "img/main/smallSlidePic/manor-lords.avif",
   "img/main/smallSlidePic/kingdom-come.avif",
   "img/main/smallSlidePic/genshin-impact1200x1600.avif",
-  "img/main/smallSlidePic/epic-savings1200x1600.avif"
+  "img/main/smallSlidePic/hades-ii.webp"
 ]; 
 
 const bImgSrcs = [
@@ -16,7 +16,7 @@ const bImgSrcs = [
   "img/main/bigSlidePic/manor-lords1200x1600.avif",
   "img/main/smallSlidePic/kingdom-come.avif",
   "img/main/bigSlidePic/genshin-impact1200x1600.avif",
-  "img/main/bigSlidePic/epic-savings.avif"
+  "img/main/bigSlidePic/hades-ii.webp"
 ];
 
 const h5text = [
@@ -25,7 +25,7 @@ const h5text = [
   "Witchfire",
   "Kingdom Come",
   "Genshin impact",
-  "Epic Savings"
+  "Hades II"
 ];
 
 function getLI(i) {
@@ -39,11 +39,15 @@ function getLI(i) {
   tempSOR.media = "(max-width: 700px)";
   tempSOR.srcset = bImgSrcs[i];
 
+  let tempSOR2 = document.createElement("source");
+  tempSOR.srcset = sImgSrcs[i];
+
   let tempIMG = document.createElement("img");
   tempIMG.className = "img-Slider-li-img";
   tempIMG.src = sImgSrcs[i];
 
   tempPIC.appendChild(tempSOR);
+  tempPIC.appendChild(tempSOR2);
   tempPIC.appendChild(tempIMG);
 
   let tempH5 = document.createElement("h5");
@@ -86,7 +90,7 @@ let ULcount = 0;
 SclickArea.addEventListener("click", function(event) {
   if (event.target.tagName != "LI"){
     if (sliderUL.children.length < 500 && window.innerWidth > 700) {
-      sliderUL.appendChild(getLI(ULcount % 5));
+      sliderUL.appendChild(getLI(ULcount % 6));
       ULcount++;
     }
   }

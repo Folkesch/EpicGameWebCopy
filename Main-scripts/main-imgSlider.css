@@ -76,10 +76,23 @@ main {
   font-size: 1vw;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   main {
     width: 100%;
   }
+
+  #main-img-Slider-div {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #img-Slider-rightSection {
+    height: calc(96vw * 0.81 * 720 / 1280);
+  }
+}
+
+@media screen and (max-width: 700px) {
 
   #main-img-Slider-div {
     width: 100%;

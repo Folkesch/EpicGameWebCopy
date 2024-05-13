@@ -7,9 +7,21 @@ const w = window.innerWidth;
 const h = window.innerHeight;
 
 rightArrow.addEventListener("click", function() {
-  ulN1.scrollLeft += (w * 0.74 + w * 0.74 * 0.025);
+  if (window.innerWidth > 900) {
+    ulN1.scrollLeft += (window.innerWidth * 0.74 + window.innerWidth * 0.74 * 0.025);
+    console.log("over")
+  }
+  else {
+    ulN1.scrollLeft += (window.innerWidth * 0.96 + window.innerWidth * 0.96 * 0.025);
+    console.log("under")
+  }
 });
 
 leftArrow.addEventListener("click", function() {
-  ulN1.scrollLeft -= (w * 0.74 + w * 0.74 * 0.025);
+  if (window.innerWidth > 900) {
+    ulN1.scrollLeft -= (window.innerWidth * 0.74 + window.innerWidth * 0.74 * 0.025);
+  }
+  else {
+    ulN1.scrollLeft -= (window.innerWidth * 0.96 + window.innerWidth * 0.96 * 0.025);
+  }
 });
